@@ -8,5 +8,10 @@
       <AdditionalIncludeDirectories>$(SolutionDir)dependencies\grit-freeimage\Source;$(SolutionDir)dependencies\grit-freeimage\Source\DeprecationManager;$(SolutionDir)dependencies\grit-freeimage\Source\OpenEXR;$(SolutionDir)dependencies\grit-freeimage\Source\OpenEXR\Half;$(SolutionDir)dependencies\grit-freeimage\Source\OpenEXR\Iex;$(SolutionDir)dependencies\grit-freeimage\Source\OpenEXR\IlmImf;$(SolutionDir)dependencies\grit-freeimage\Source\OpenEXR\Imath;$(SolutionDir)dependencies\grit-freeimage\Source\OpenEXR\IlmThread;$(SolutionDir)dependencies\grit-freeimage\Source\LibJXR\jxrgluelib;$(SolutionDir)dependencies\grit-freeimage\Source\LibJXR\image\sys;$(SolutionDir)dependencies\grit-freeimage\Source\ZLib;$(SolutionDir)dependencies\grit-freeimage\Source\LibRawLite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>LIBRAW_NODLL;FREEIMAGE_LIB;OPJ_STATIC;DISABLE_PERF_MEASUREMENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
