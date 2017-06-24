@@ -81,7 +81,9 @@ If your big endian system isn't being detected, add an OS specific check
 #endif // BYTE_ORDER
 
 #ifdef _WIN32
-#define snprintf _snprintf
+// [dcunnin] This is no-longer needed with c++14 (which is how msvc interprets C code).
+// In fact, it causes an error because it breaks the definition in stdio.h.
+// #define snprintf _snprintf
 #define lfind _lfind
 #endif // _WIN32
 
